@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Big transfers",
+        "key": "menu-big-transfers",
+        "link": "#Big-trasnfers"
+    },
+    {
+        "title": "Processes",
+        "key": "menu-processes",
+        "link": "#Processes"
+    },
+    {
+        "title": "Benefits",
+        "key": "menu-benefits",
+        "link": "#Benefits"
+    },
+    {
+        "title": "Personal",
+        "key": "menu-personal",
+        "link": "#Personal"
+    }
+]
