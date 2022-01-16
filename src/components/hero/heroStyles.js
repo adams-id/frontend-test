@@ -155,6 +155,7 @@ export const AddFileBlock = styled.div`
     text-align: center;
     color: ${textWhite};
     box-sizing: border-box;
+    cursor: pointer;
 
     @media screen and (max-width: 991px) {
         flex-direction: row;
@@ -173,6 +174,7 @@ export const AddFilePlus = styled.div`
     background-size: auto;
     background-repeat: no-repeat;
     box-shadow: 0 30px 30px 0 rgb(65 70 78 / 30%);
+    cursor: pointer;
 
     @media screen and (max-width: 991px) {
         width: 46px;

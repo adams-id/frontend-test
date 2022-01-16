@@ -16,7 +16,7 @@ import { backgroundGreen1 } from "../../constants/styles";
 
 const HeroComponent = ({children}) => {
     return (
-        <Frame>
+        <Frame id="Big-transfers">
             <Background>
                 {children}
             </Background>
@@ -34,7 +34,7 @@ HeroComponent.Header = ({children}) => {
 
 HeroComponent.HeaderLogo = ({logo, textLogo, ...restProps}) => {
     return (
-        <Logo>
+        <Logo href="/">
             <img src={logo} alt='' {...restProps} />
             <TextLogo>
                 <img src={textLogo} alt='' {...restProps} />

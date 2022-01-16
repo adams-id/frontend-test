@@ -7,6 +7,9 @@ export const backgroundGreen1 = '#8BB8A2';
 export const textGainsboro = '#DCDCDC';
 export const borderWhite = '#FFFFFF';
 export const backgroundWhite = '#FFFFFF';
+export const textMidnightBlue = '#0A033C';
+export const backgroundMidnightBlue = '#0A033C';
+export const backgroundDarkBlue = '#4C4E83';
 
 // Fonts
 export const buttonText1 = `normal 300 18px/26px sans-serif`;

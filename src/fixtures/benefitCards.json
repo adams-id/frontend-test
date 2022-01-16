@@ -1,0 +1,29 @@
+[
+    {
+        "key": "benefit-card-1",
+        "title": "Fast switching between different tools",
+        "titleLine1": "Fast switching",
+        "titleLine2": "between different tools",
+        "description": "You can download documents in different file formats, import files to Evernote",
+        "iconSrc": "/assets/icons/work-icon-1.svg",
+        "maxTitleWidth": ""
+    },
+    {
+        "description": "Application lets users preview PDF documents on a range of devices and supports password protection",
+        "iconSrc": "/assets/icons/work-icon-2.svg",
+        "key": "benefit-card-2",
+        "title": "Sending large files safely",
+        "titleLine1": "Sending",
+        "titleLine2": "large files safely",
+        "maxTitleWidth": "163px"
+    },
+    {
+        "description": "The app has improved support for popular PDF extensions such as Fill and Sign",
+        "iconSrc": "/assets/icons/work-icon-3.svg",
+        "title": "Make materials available to loved ones",
+        "titleLine1": "Make materials",
+        "titleLine2": "available to loved ones",
+        "key": "benefit-card-3",
+        "maxTitleWidth": "234px"
+    }
+]

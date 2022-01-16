@@ -1,9 +1,12 @@
 import React from 'react';
-import { Hero } from '../Containers';
+import { BenefitsSection, Hero } from '../Containers';
 
 const HomePage = () => {
     return(
-        <Hero />
+        <>
+            <Hero />
+            <BenefitsSection />
+        </>
     )    
 }
 
