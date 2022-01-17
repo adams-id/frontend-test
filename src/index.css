@@ -18,3 +18,17 @@ a {
 * {
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 967px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+#login-button:hover #login-arrow-group {
+    right: -28px;
+}
+
+[data-anim=section-card]:hover [data-anim=section-card-icon-animation] {
+    top: -60px;
+}

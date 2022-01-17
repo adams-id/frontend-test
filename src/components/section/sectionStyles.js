@@ -43,4 +43,8 @@ export const Content = styled.div`
     box-sizing: content-box;
     align-items: stretch;
     margin-top: 32px;
+
+    @media screen  and (max-width: 767px) {
+        flex-direction: column;
+    }
 `;

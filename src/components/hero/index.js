@@ -1,18 +1,14 @@
 import React from "react";
 import { ButtonComponent } from '..';
 import {
-    AddBlockSubtitle,
-    AddBlockTitle,
-    AddFileBlock,
-    AddFilePlus,
-    AddFileWrapper,
-    Background, Buttons, Content, Frame,
-    Hamburger,
-    HamburgerLines,
-    HamburgerLine ,
-    Header, Logo, Menu, MenuItem, Subtitle, TextLogo, Title, AddBlockText
+    AddBlockSubtitle, AddBlockTitle, AddFileBlock, AddFilePlus,
+    AddFileWrapper, Background, Buttons, Content, Frame,
+    Hamburger, HamburgerLines, HamburgerLine,
+    Header, Logo, Menu, MenuItem, Subtitle,
+    TextLogo, Title, AddBlockText, MenuItemWrapper
 } from "./heroStyles";
 import { backgroundGreen1 } from "../../constants/styles";
+import { ImageComponent as Image } from '..';
 
 const HeroComponent = ({children}) => {
     return (
@@ -50,7 +46,10 @@ HeroComponent.HeaderMenu = ({menuItems}) => {
                 return(
                     <MenuItem key={item.key} id={item.key}>
                         <a href={item.link}>
-                            <span>{item.title}</span>
+                            <MenuItemWrapper>
+                                <span>{item.title}</span>
+                                <span>{item.title}</span>
+                            </MenuItemWrapper>
                         </a>
                     </MenuItem>
                 )
@@ -63,10 +62,40 @@ HeroComponent.HeaderButtons = () => {
     return(
         <Buttons>
             <ButtonComponent
-                minWidth='60px'
+                id='login-button'
                 bgColor={backgroundGreen1}
                 borderColor='transparent'
-            />
+                minWidth='0'
+                maxHeight='60px'
+                maxWidth='60px'
+                hoverBorderColor={'transparent'}
+            >
+                <ButtonComponent.IconWrapper>
+
+                    <Image.ImageGroup
+                        id='login-arrow-group'
+                        direction='row'
+                        gap='12px'
+                    >
+                        <img 
+                            src="https://uploads-ssl.webflow.com/61c1b5d6cb8a0046c7fa6e82/61c33a7e3ca198c5c9181b5d_ico_login1.svg"
+                            loading="lazy"
+                            alt=""
+                        />
+                        <img 
+                            src="https://uploads-ssl.webflow.com/61c1b5d6cb8a0046c7fa6e82/61c33a7e3ca198c5c9181b5d_ico_login1.svg"
+                            loading="lazy"
+                            alt=""
+                        />
+                    </Image.ImageGroup>
+                    
+                    <img
+                        src="https://uploads-ssl.webflow.com/61c1b5d6cb8a0046c7fa6e82/61c33a7d370af265295f8eed_ico_login2.svg"
+                        loading="lazy"
+                        alt=""
+                    />
+                </ButtonComponent.IconWrapper>
+            </ButtonComponent>
             <ButtonComponent>Sign Up</ButtonComponent>
         </Buttons>
     )

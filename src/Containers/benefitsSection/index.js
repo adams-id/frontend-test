@@ -17,6 +17,7 @@ const BenefitsSectionContainer = () => {
                             key={item.key}
                             description={item.description}
                             imageSrc={item.iconSrc}
+                            data-anim='section-card'
                         />
                     )
                 })}

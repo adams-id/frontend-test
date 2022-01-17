@@ -3,7 +3,11 @@ import { backgroundDarkBlue, backgroundWhite, textMidnightBlue } from "../../con
 
 export const Wrapper = styled.div`
     margin: 0 20px;
-    flex: 1 1 0px
+    flex: 1 1 0px;
+
+    @media screen  and (max-width: 767px) {
+        margin: 20px 0;
+    }
 `;
 
 export const Background = styled.div`
@@ -28,8 +32,24 @@ export const Icon = styled.div`
     height: 80px;
     margin-bottom: 32px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     border-radius: 8px;
+    overflow: hidden;
+
+    @media screen and (max-width: 967px) {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 24px;
+    }
+`;
+
+export const IconWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 16px;
+    transition: all 400ms ease;
+    gap: 30px
 `;
 
 export const Title = styled.h3`
@@ -40,6 +60,11 @@ export const Title = styled.h3`
     text-align: center;
     color: ${textMidnightBlue};
     max-width: ${({maxTitleWidth}) => maxTitleWidth ? maxTitleWidth : '240px'};
+
+    @media screen  and (max-width: 767px) {
+        font-size: 18px;
+        margin: 0 0 12px;
+    }
 `;
 
 export const Description = styled.p`

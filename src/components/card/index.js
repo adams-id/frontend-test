@@ -1,5 +1,5 @@
 import React from "react";
-import { Background, Description, Icon, Title, Wrapper } from "./cardStyles";
+import { Background, Description, Icon, IconWrapper, Title, Wrapper } from "./cardStyles";
 
 const CardComponent = ({title, description, imageSrc, imageAltText, maxTitleWidth, ...restProps}) => {
 
@@ -9,7 +9,12 @@ const CardComponent = ({title, description, imageSrc, imageAltText, maxTitleWidt
         <Wrapper>
             <Background {...restProps} >
                 <Icon>
-                    <img src={imageSrc} loading="lazy" alt={altText} />
+                    <IconWrapper
+                        data-anim="section-card-icon-animation"
+                    >
+                        <img src={imageSrc} loading="lazy" alt={altText} />
+                        <img src={imageSrc} loading="lazy" alt={altText} />
+                    </IconWrapper>
                 </Icon>
                 <Title
                     maxTitleWidth={maxTitleWidth}

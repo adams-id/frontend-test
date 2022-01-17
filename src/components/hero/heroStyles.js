@@ -62,6 +62,7 @@ export const TextLogo = styled.div`
 export const Menu = styled.div`
     display: flex;
     flex-direction: row;
+    max-height: 30px;
 
     @media screen and (max-width: 991px) {
         display: none;
@@ -71,6 +72,22 @@ export const Menu = styled.div`
 export const MenuItem = styled.div`
     color: ${textSilver};
     margin: 0 30px;
+    overflow: hidden;
+`;
+
+export const MenuItemWrapper = styled.div`
+    position: relative;
+    top: 0px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: all 300ms ease;
+
+    :hover {
+        color: ${textWhite};
+        top: -44px;
+    }
 `;
 
 export const Buttons = styled.div`

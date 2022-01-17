@@ -1,9 +1,10 @@
 import React from "react";
-import { Button } from './buttonStyles';
+import { Button, IconWrapper } from './buttonStyles';
 
 const ButtonComponent = ({
     borderColor, borderWidth, borderStyle, bgColor, padding, textColor,
-    borderRadius, minWidth, minHeight, font, ...restProps
+    borderRadius, minWidth, minHeight, font, maxWidth, maxHeight,
+    hoverBorderColor, ...restProps
 }) => {
     return (
         <Button
@@ -17,8 +18,19 @@ const ButtonComponent = ({
             minWidth={minWidth}
             minHeight={minHeight}
             font={font}
+            maxWidth={maxWidth}
+            maxHeight={maxHeight}
+            hoverBorderColor={hoverBorderColor}
             {...restProps}
         />
+    )
+}
+
+ButtonComponent.IconWrapper = ({children}) => {
+    return(
+        <IconWrapper>
+            {children}
+        </IconWrapper>
     )
 }
 
