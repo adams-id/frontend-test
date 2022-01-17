@@ -1,0 +1,50 @@
+[
+    {
+        "key": "footer-col-1",
+        "title": "About us",
+        "type": "string",
+        "description": "A smart workspace is a digital environment that brings together all the content of workgroup members with their favorite tools."
+    },
+    {
+        "key": "footer-col-2",
+        "title": "Sitemap",
+        "type": "list",
+        "description": [
+            {
+            "key": "button-1",
+            "title": "Big Transfers",
+            "link": "#big-transfers"
+            },
+            {
+                "key": "button-2",
+                "title": "Processes",
+                "link": "#processes"
+            },
+            {
+                "key": "button-3",
+                "title": "Benefits",
+                "link": "#benefits"
+            },
+            {
+                "key": "button-4",
+                "title": "Personal",
+                "link": "#personal"
+            },
+            {
+                "key": "button-5",
+                "title": "About",
+                "link": "#about"
+            }
+        ]
+    },
+    {
+        "key": "footer-col-3",
+        "title": "Community",
+        "type": "list",
+        "description": [
+            {
+                
+            }
+        ]
+    }
+]
